@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>Modificar Estados</title>
+    <link rel="stylesheet" href="<?= base_url('css/styles.css'); ?>">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+</head>
+
+<body class="background">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+
+                <div class="d-flex justify-content-between align-items-center mt-2 mb-2">
+                    <h1 class="mb-0">Modificar Estado</h1>
+                    <a href="<?= base_url('estados'); ?>" class="btn btn-dark">
+                        Volver
+                    </a>
+                </div>
+
+                <form action="<?=base_url('actualizar_estado')?>" method="post">
+                    <label for="txt_codigo_estado" class="form-label">Codigo de Estado</label>
+                    <input type="number" name="txt_codigo_estado" id="txt_codigo_estado" class="form-control" value="<?=$datos['codigo_estado'];?>" readonly>
+
+                    <label for="txt_nombre" class="form-label">Nombre</label>
+                    <input type="text" name="txt_nombre" id="txt_nombre" class="form-control" value="<?=$datos['nombre'];?>">
+
+                    <button type="submit" class="form-control btn btn-dark mt-3">Modificar Datos</button>
+                </form>
+
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+
+</html>

@@ -1,0 +1,14 @@
+CRITICAL - 2025-09-18 23:51:05 --> ErrorException: Undefined variable $datosEmpleados
+[Method: GET, Route: buscar_prestamo/48]
+in APPPATH\Views\form_modificar_prestamos.php on line 43.
+ 1 APPPATH\Views\form_modificar_prestamos.php(43): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $datosEmpleados', 'C:\\wamp64\\www\\fs2025\\ADHD03\\app\\Views\\form_modificar_prestamos.php', 43)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\wamp64\\www\\fs2025\\ADHD03\\app\\Views\\form_modificar_prestamos.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('form_modificar_prestamos', [], true)
+ 5 APPPATH\Controllers\PrestamosController.php(54): view('form_modificar_prestamos', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PrestamosController->buscar('48')
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PrestamosController))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))

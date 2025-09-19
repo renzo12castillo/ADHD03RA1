@@ -1,0 +1,7 @@
+.background {
+    background-image: linear-gradient(180deg, #c5c2c2d4 0%, #252221 100%), 
+    url("../images/biblioteca.png"); 
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
